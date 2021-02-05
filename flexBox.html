@@ -1,0 +1,103 @@
+<style>
+
+</style>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Flex Box Tutorial</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    @media (min-width:768px) {
+      .my-container {
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+      }
+    }
+
+    .my-container {
+      border: 10px solid #1d0;
+      min-height: 100vh;
+      /*display: inline-flex;
+      flex-direction: column;
+      flex-direction: row-reverse;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+      justify-content: space-between;
+      justify-content: space-around;
+      */
+
+    }
+
+    .my-container div {
+      border: 2px solid #d33;
+      padding: 50px;
+      font-size: 45px;
+      font-weight: bold;
+      flex-basis: 20%
+    }
+
+    .box-1 {
+      background: #10ffff;
+      order: 3
+    }
+
+    .box-2 {
+      background: #e4ff03;
+      order: 2
+    }
+
+    .box-3 {
+      background: #ff9a03;
+      order: 1
+    }
+
+    .box-4 {
+      background: #ff37f9;
+      order: 4
+    }
+
+    .box-5 {
+      background: #ff0000;
+      order: 5
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <div class="my-container">
+    <div class="box-1 ">
+      1
+    </div>
+    <div class="box-2">
+      2
+    </div>
+    <div class="box-3">
+      3
+    </div>
+    <div class="box-4">
+      4
+    </div>
+    <div class="box-5">
+      5
+    </div>
+  </div>
+
+
+</body>
+
+</html>
